@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjana's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b695bb3752.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#About">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text" >
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Sanjana</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+<!-------about---------- -->
+
+ <div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/me_1.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About me</h1>
+                <p>I am an Enthusiastic learner, there is always a curiosity that lies in me to learn new things. To use and develop my skills and knowledge for the growth of an organization; to gain experience in the industrial area and polish my technical skills; to persevere towards attaining a respective position in the organization. I also believe in myself as a hard worker and change-maker.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                      <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>  
+                      <li><span>Web Development</span><br>Designing Web/App Interfaces</li>
+                      <li><span>Data Science</span><br>Designing tailor-made solutions from the data</li>  
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                      <li><span>2023- Current</span><br>Trainee consultant at Optivalue Tek Consulting</li>  
+                      <li><span>2022 Mar - 2022 Aug</span><br>Internship at Cognizant</li>  
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                      <li><span>2018-2022</span><br>BE from BMSIT&M from Banglore</li>  
+                      <li><span>2017-2018</span><br>PUC from SDM PU college Honnavar</li>  
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<!--------Services----- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>As a web designer, my objective is to make a positive impact on clients, co-workers, and the Internet using my skills and experience to design compelling and attractive websites. Solving code problems. Editing & Design with designing team in the company to build perfect web designs.</p>
+                 <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>UI/UX Design</h2>
+                <p>Creates innovative solutions for a wide variety of product design challenges, including mobile, desktop, hardware interfaces, physical environments, and person-to-person interactions. Leads the design for new experiences and improvements of existing experiences.</p>
+                 <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Data Science</h2>
+                <p> Passionate about building models that fix problems. Relevant skills include machine learning, problem solving, programming, and creative thinking.</p>
+                 <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------portfolio---- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/mob_app_1.jpg" alt="">
+                <div class="layer">
+                    <h3>Task Master App</h3>
+                    <p>It is a web application for task management. It includes creating a task editing the task and deleting the task developed using flask 
+                        framework</p>
+                    <a href="https://github.com/Sanjanag12/Flask.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/mob_app_3.jpg" alt="">
+                <div class="layer">
+                    <h3> Voice based Library Management System</h3>
+                    <p>It is a project developed using Django, to help students, librarians in 
+                        redesigning the traditional library system with the touch of digital technology. Bootstrap framework is also used to speed up UI
+                        development.</p>
+                    <a href="https://github.com/Sanjanags12/Dbms-Mini-Project.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/mob_app_4.jpg" alt="">
+                <div class="layer">
+                    <h3> Customer segmentation</h3>
+                    <p> The purpose of this project is to determine dependency on products and shopping 
+                        habits by comparative study using six Clustering Algorithms i.e., K- means Clustering, Fuzzy c means, Agglomerative Hierarchical 
+                        Clustering, Mean shift Clustering, Birch and Affinity propagation which uses the customers data in an efficient way and provide statistical 
+                        information thus predicting the future customer behaviour. Sending promotional emails and offers to the customer.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--------Contact ------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact Me</h1>
+               <p><i class="fa-solid fa-paper-plane"></i> Sanjanshetty919@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 9483202522</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sanjana-shetty-gs12"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/sanjana_gs"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/Sanjanag12"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="8" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sanjana made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script>   
+
+ <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+ </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby5t6sK4agBoMRjjkTFpi6ulbPmVM4rBUNMQQCjl3wjcCr6x7gc8nreW_axaNcWLpyeVw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
